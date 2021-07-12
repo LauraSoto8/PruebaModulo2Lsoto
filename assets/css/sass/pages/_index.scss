@@ -1,0 +1,182 @@
+.navigation row{
+    position:relative;
+    top:0;
+}
+.Navigation{
+    margin: 0;
+    width: 100%;
+}
+
+.navigation__logo{
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    background-color: $black !important;
+    @media only screen and (min-width: 1280px) {
+    top:0.5em;
+    padding-left: 0em;
+}
+}
+.collapsible{
+    text-align: right;
+    color:$white;
+    background-color: $black !important;
+    &:hover{
+        color: $tangerine;
+    }  
+    @media only screen and (min-width: 1280px) {
+        justify-content: space-between;}
+    label{
+        display: block;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-right: 1.5em;
+        font-size: 1.8em;
+        @media only screen and (min-width: 1280px) {
+            display: none;}
+    }
+}
+#menu{
+    display: none;
+
+}
+
+input:checked ~.navigation__container{
+    max-height:100% ;
+}
+.navigation__container{
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    @media only screen and (min-width: 1280px) {
+        max-height: 100%;
+        padding: .5em 0.5em .5em 0;
+        margin-left: 0.5em;
+        overflow: visible;}
+}
+.navigation__list{
+    list-style-type: none;
+    @media only screen and (min-width: 1280px) {
+        display: flex !important;
+        justify-content: flex-end !important;
+        margin: inherit;
+        padding: inherit;
+        list-style-type: none;}
+}
+.navigation__item{
+    a{
+        display: block;
+        text-align: left;
+        padding: .5em;
+        font-family: $ubuntu;
+        font-size: $x-small;
+        font-weight: $bold;
+        color:$white;
+        text-decoration: none;
+        &:hover{
+            color: $tangerine;
+        }
+        @media only screen and (min-width: 1280px) {
+            padding: .5em 1em;
+            font-size: $small;
+            font-weight: $bold;
+        }
+        
+    }
+}
+.iconos{
+    display: flex !important;
+    justify-content: flex-start !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    i{
+        margin-left:  5px;
+    }
+    
+}
+.redes{
+    display: flex !important;
+    justify-content: center!important;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    i{
+        margin-left:  5px;  
+    }
+}
+
+.links{
+    padding: 20px;
+}
+.principal{
+    width:100%;
+    img{
+        width: 100%;
+        height: 100%;
+        @media only screen and (min-width: 1280px) {
+            width: 90%;}
+    
+    }
+}
+.list{
+    justify-content: center;
+    list-style-type: none;
+    @media only screen and (min-width: 1280px) {
+        display: flex;
+        list-style-type: none;
+       
+    }
+
+}
+.footer{
+    background-color: $black;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    padding: 50px;
+    @media only screen and (min-width:1280px) {
+    justify-content: space-between;    
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    .text{
+        grid-column: 1;
+        justify-self: start;
+        align-self: center;
+    }
+    .anuncios{
+        display: flex;
+        width: 100%;
+        grid-column: 2;
+        justify-content: space-between;
+    
+    .text2{
+        width: 50%;
+        align-self: center;
+        justify-content: end;
+        .list{
+        li{
+            margin-left: 5px;
+            display: flex !important;
+        }}
+    }
+    .my_formulario{
+        width: 50% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block;
+        justify-self:end;
+    input, button{
+        align-self: center;
+        justify-self: end;
+        margin: 0 !important;
+    }
+
+
+    }}
+
+        }
+    }    
+    

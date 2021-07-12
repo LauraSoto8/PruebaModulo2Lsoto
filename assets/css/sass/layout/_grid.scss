@@ -1,0 +1,109 @@
+.main_container{
+    display: block;
+    padding: 5px;
+    border: solid 0.1px $sable;
+    margin: 15px;
+}
+.main__description{
+    display: block;
+    border: dotted 1px $sable; 
+    margin:1px;
+    padding:3px;
+    height:50%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.cursos{
+    display: block;
+    padding: 5px;
+    border: solid 1px $sable;
+    margin: 15px;
+    svg{
+        width: 50%;
+        margin-left: 25%;
+        @media only screen and (min-width: 1280px) {
+            width: 60%;
+            height: auto;
+            margin-left: 20%
+        }
+    }
+//svg code animation
+    .code{
+    animation: move 3s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+//svg nut animation
+    .nut{
+    transition: all;
+    animation: rotate 3s infinite;
+    animation-timing-function: linear;
+    transform-origin: 80% 80%;
+}
+    img{
+        border-radius: 100%;
+        border:solid $gris;
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 80%;
+        height:80%;
+        @media only screen and (min-width: 1280px) {
+            width: 30%;
+            height: auto;
+        }
+    }
+
+    .cursos_content{
+            padding: 10px;
+            
+        }    
+    }
+
+@media only screen and (min-width: 1280px) {
+    .container1{
+        display: grid;
+        margin: 15px !important;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+
+        .principal{
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+            margin: 0 auto;
+            width: 60%;
+
+        }
+        .grid-container{
+            grid-column: 1;
+            grid-row:2;
+            display: grid;
+            width: 100%;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+        
+    
+
+        .main_container{
+            grid-column: 1;
+            width: 100%;
+            justify-content: stretch;
+        }
+        .cursos{
+            grid-column: 2;
+            width: 95%;
+            margin-right: 10px;
+            img{
+                display: flex;
+                justify-content: center;
+                margin:0 auto;
+               
+            }
+        }}
+
+        }
+    }
+    

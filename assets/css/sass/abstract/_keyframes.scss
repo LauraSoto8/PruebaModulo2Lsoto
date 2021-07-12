@@ -1,0 +1,14 @@
+
+@keyframes rotate{
+    from{transform: rotateZ(0);}
+    to{transform: rotateZ(360deg);}
+}
+
+@keyframes move{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(9rem,0);
+    }
+}

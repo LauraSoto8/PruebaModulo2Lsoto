@@ -1,0 +1,40 @@
+.title, .autor{
+    text-align: left;
+    font-weight: $bold;
+    font-family: $poppins;
+    padding-bottom: 10px;
+
+}
+.content, .cursos_content{
+    text-align: justify;
+    font-weight: $regular;
+    font-family: $poppins;
+    padding-bottom: 10px;
+    @media only screen and (min-width: 1280px) {
+        font-size: $small;
+}}
+.main__content{
+    p{
+    @media only screen and (min-width: 1280px) {
+        font-size: $small;}
+}}
+
+h5{
+    background-color:$gris ;
+    text-align: center ;
+    color:$white;
+    font-weight: $bold;
+}
+.links{
+    a{
+    color: #572364!important ;
+    text-decoration: none;
+}
+li{
+    list-style-type: circle;
+}}
+
+footer{
+    font-family:$poppins;
+    font-weight: $regular;
+}
